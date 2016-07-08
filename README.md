@@ -4,6 +4,9 @@ Podium is an application for booking and scheduling talks for meetups.  This
 app is being built by Python Atlanta Jam Session members to help schedule talks
 for our Python Atlanta meetups.
 
+Python Atlanta's Podium is currently running at
+https://pyatl-podium.herokuapp.com/
+
 ## Basic Setup ##
 
 This application is web-based, using the Flask framework.
