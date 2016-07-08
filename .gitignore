@@ -68,3 +68,4 @@ venv/
 *.swp
 *.swo
 *.vim
+.idea/
