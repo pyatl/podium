@@ -7,6 +7,9 @@
 # this will be read in by the app, and allow the config to beset by environment variables.
 from os import environ
 
+# To have sessions you need to have a secret key. Let's get that now!
+SECRET_KEY = environ.get('SECRET_KEY')
+
 # This allows you to name the app. Mostly a test variable.
 APP_NAME = environ.get('APP_NAME')
 
