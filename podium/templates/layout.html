@@ -44,7 +44,7 @@
                         {% if meetup_user == None %}
                         <li><a href="{{ url_for("meetup.login") }}">Login with Meetup.com</a></li>
                         {% else %}
-                        <li><img src="{{ meetup_user.thumb_link }}" /> Welcome {{ meetup_user.name }}!</li>
+                        <li><img src="{{ meetup_user.photo.thumb_link }}" /> <p class="navbar-text">Welcome {{ meetup_user.name }}!</p></li>
                         {% endif %}
                     </ul>
                 </div><!--/.nav-collapse -->
