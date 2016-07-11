@@ -19,3 +19,4 @@ meetup_blueprint = make_meetup_blueprint(
 app.register_blueprint(meetup_blueprint, url_prefix="/login")
 
 import podium.views
+import podium.database

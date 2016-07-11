@@ -7,6 +7,12 @@ from flask_dance.contrib.meetup import meetup
 
 @app.context_processor
 def inject_meetup_user():
+    """
+    Allows templates to get the current user information. This is done specifically so
+    the layout template can access this information.
+
+    :return:
+    """
     meetup_user = None
     if meetup.authorized:
         resp = meetup.get("member/self")
@@ -17,4 +23,8 @@ def inject_meetup_user():
 
 @app.route('/')
 def index():
+    """
+    Index view. This will be the primary page people see.
+    :return:
+    """
     return render_template("index.html")
